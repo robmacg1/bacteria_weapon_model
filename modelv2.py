@@ -250,7 +250,7 @@ class Model:
 
         """
         # Gets slider value for North/South and derives how close it is to south and how far it is from south and multiplies each by the power of 5
-        # to exponentially increase the wights towards 100
+        # to exponentially increase the weights towards 100
         ns = self.slider2.get()
         s = ns ** 5
         n = (100 - ns) **5

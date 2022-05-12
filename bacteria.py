@@ -9,7 +9,7 @@
 import random as rn
 
 # =============================================================================
-# Bacteria Class 
+# Bacteria Class and functions
 # =============================================================================
 class Bacteria:
     def __init__(self, i, density, direction, altitude, y = 0, x = 0):
@@ -95,7 +95,9 @@ class Bacteria:
                 # Choose a direction based on weights derived from the wind direction
                 b = rn.choices(nsew, weights=self.direction, k=1)
                 if b == [1]:
+                    #print(self.y)
                     self.y += rn.randint(1,speed)
+                    #print(self.y)
                 if b == [2]:
                     self.y -= rn.randint(1,speed)
                 if b == [3]:
@@ -106,6 +108,6 @@ class Bacteria:
             # Increase model second counter by 1
             self.time += 1
         
-        # Once bacteria lands loop ends and density map is increased by at the coordiante of where the bacteria landed
+        # Once bacteria lands loop ends and density map is increased by 1 at the coordiante of where the bacteria landed
         if self.altitude == 0:
             self.density[self.y][self.x] += 1
