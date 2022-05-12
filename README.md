@@ -5,12 +5,12 @@
 
 
 Repository contents:
-> readme.md: this read me with instructions to run the model and information about the project
-> modelv2.html: PyDoc documentation for the model
-> bacteria.html: PyDoc documentation for the bacteria module
-> modelv2.py: Python script to run the model
-> bacteria.py: Python bacteria module
-> bomb.raster: 300x300 raster image that contains the bomb location as a pixel with a value of 1
+> - readme.md: this read me with instructions to run the model and information about the project
+> - modelv2.html: PyDoc documentation for the model
+> - bacteria.html: PyDoc documentation for the bacteria module
+> - modelv2.py: Python script to run the model
+> - bacteria.py: Python bacteria module
+> - bomb.raster: 300x300 raster image that contains the bomb location as a pixel with a value of 1
 
 ### About:
 This is a model of the airborne dispersal of bacteria from a bio-bomb detonated above the skyline of a city. The model allows the user to set the wind conditions, the size of the bomb, and the height it is detonated at in a GUI and then plots a density map of the dispersal. The output can be saved as an image or as a .csv for further statistical analysis. Then the model can be reset or have its conditions changed and be run again!
